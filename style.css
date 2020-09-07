@@ -5,7 +5,6 @@
 }
 
 body {
-	background-color: #dddbcb;
 	font-family: Georgia;
 }
 
@@ -14,7 +13,7 @@ header {
 	justify-content: space-around;
 	align-items: center;
 	padding: 30px 0;
-	background-color: #5f758e;
+	background-color: #444B6E;
 	color: #dddbcb;
 	margin: auto;
 
@@ -23,8 +22,8 @@ header {
 .banner {
 	padding: 5px;
 	width: 80%;
-	background-color: #6d7275;
-	color: #dddbcb;
+	background-color: #2e434d;
+	color: #C6C5B9;
 	margin: 20px auto;
 	border-style: solid;
 	border-width: 1px;
@@ -48,7 +47,7 @@ main {
 
 q,
 .about-btn {
-	color: #dddbcb;
+	color: #C6C5B9;
 
 }
 
@@ -72,23 +71,43 @@ h5 {
 
 }
 
-#tech-image {
+.pi-image1 {
 	background-image: url("images/tech.jpg");
+	background-position: center;
+	background-size: cover;
+	filter: grayscale(1);
+	border-style: solid;
+	border-width: 1px;
+	border-color: #6d7275;
+}
+
+.pi-image2 {
+	background-image: url("images/flower.jpg");
 	background-position: center;
 	background-size: cover;
 	filter: grayscale(100%);
 	border-style: solid;
 	border-width: 1px;
 	border-color: #6d7275;
+	text-align: right;
 }
+
 
 .about-me {
 	width: 60%;
 	justify-content: space-between;
-	margin: auto;
+	margin: 20px auto;
 	padding: 30px;
 	border-style: solid;
 	border-width: 3px;
 	border-color: #5f758e;
 	color: #001a1d;
 }
+
+@media screen and (max-width: 1200px) {
+	.portfolio-item {
+		flex-wrap: wrap;
+	}
+}
+
+
