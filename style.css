@@ -23,3 +23,24 @@ header {
 	color: #dddbcb;
 	margin: 10px auto;
 }
+
+main {
+/*	background-image: url("images/floor.jpg"); */
+	padding: 100px;
+	width: 80%;
+	margin: auto;
+}
+
+.items {
+	display: flex;
+	width: 80%;
+	justify-content: space-between;
+	margin: auto;
+}
+
+
+.about-me {
+	width: 80%;
+	justify-content: space-between;
+	margin: auto;
+}
