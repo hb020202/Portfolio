@@ -3,11 +3,23 @@
 * {
 	box-sizing: border-box;
 	font-family: Georgia;
+	background-color: #dddbcb;
 }
 
 header {
 	display: flex;
 	justify-content: space-around;
-	padding: 10px 0;
+	align-items: center;
+	padding: 40px 0;
 	background-color: #5f758e;
+	color: #dddbcb;
+
+}
+
+.banner {
+	padding: 10px;
+	width: 80%;
+	background-color: #6b0f1a;
+	color: #dddbcb;
+	margin: 10px auto;
 }
