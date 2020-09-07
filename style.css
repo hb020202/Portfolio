@@ -52,7 +52,8 @@ q,
 }
 
 .items {
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 	width: 80%;
 	justify-content: space-between;
 	margin: auto;
@@ -62,8 +63,6 @@ q,
 
 .portfolio-item {
 	padding: 0 20px;
-	width: 25%;
-
 }
 
 h5 {
@@ -91,7 +90,12 @@ h5 {
 	border-color: #6d7275;
 	text-align: right;
 }
-
+.pi-image3 {
+	background-image: url("images/wireframe.png");
+	background-position: contain;
+	object-fit: contain;
+	
+}
 
 .about-me {
 	width: 60%;
@@ -99,15 +103,23 @@ h5 {
 	margin: 20px auto;
 	padding: 30px;
 	border-style: solid;
-	border-width: 3px;
+	border-width: 5px;
 	border-color: #5f758e;
 	color: #001a1d;
 }
 
 @media screen and (max-width: 1200px) {
-	.portfolio-item {
-		flex-wrap: wrap;
+	#items {
+		grid-template-columns: 1fr 1fr;
+		gap: 10px;
 	}
 }
 
-
+@media screen and (max-width: 700px) {
+	main {
+		background-image: url("images/floor2.jpg");
+		background-position: center;
+		background-size: cover;
+		filter: grayscale(100%);
+	}
+}
