@@ -30,6 +30,7 @@ header {
 	border-style: solid;
 	border-width: 1px;
 	border-color: #001a1d;
+	text-align: center;
 	
 }
 
@@ -114,7 +115,19 @@ h5 {
 	color: #2a324b;
 }
 
+.github {
+	background-image: url("images/github.png");
+	background-position: center;
 
+	width: 10%;
+}
+.linkedin {
+	background-image: url("images/linkedinlogo.png");
+	background-position: center;
+
+	width: 10%;
+	
+}
 
 @media screen and (max-width: 1200px) {
 	#items {
