@@ -2,7 +2,7 @@
 
 * {
 	box-sizing: border-box;
-	font-family: Georgia;
+
 	background-color: #dddbcb;
 }
 
@@ -19,16 +19,26 @@ header {
 .banner {
 	padding: 10px;
 	width: 80%;
-	background-color: #6b0f1a;
+	background-color: #6d7275;
 	color: #dddbcb;
-	margin: 10px auto;
+	margin: 20px auto;
 }
 
 main {
-/*	background-image: url("images/floor.jpg"); */
-	padding: 100px;
-	width: 80%;
+	background-image: url("images/floor.jpg");
+	background-position: center;
+	background-size: cover;
+	filter: grayscale(100%);
+	padding: 200px;
+	width: 40%;
 	margin: auto;
+	
+}
+
+q,
+.about-btn {
+	color: #dddbcb;
+
 }
 
 .items {
@@ -38,9 +48,12 @@ main {
 	margin: auto;
 }
 
+.portfolio-item {
+	padding: 0 20px;
+}
 
 .about-me {
-	width: 80%;
+	width: 60%;
 	justify-content: space-between;
 	margin: auto;
 }
