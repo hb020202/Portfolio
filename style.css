@@ -138,17 +138,21 @@ h5 {
 
 .contacts {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	width: 40%;
-	justify-content: space-between;
+	grid-template-columns: 1fr 1fr 1fr;
+	width: 50%;
 	margin: auto;
+	max-height: 50px;
+}
+
+.social {
+	text-align: center;
 }
 
 .github {
-	width: 10%;
+	max-height: 30px;
 }
 .linkedin {
-	width: 10%;
+	max-height: 30px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -164,8 +168,13 @@ h5 {
 		width: 80%;
 		padding: 150px;
 	}
+	.about-me {
+		width: 80%;
+	}
 }
 
 @media screen and (max-width: 700px) {
-	
+	#items {
+		grid-template-columns: 1fr;
+	}
 }
