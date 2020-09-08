@@ -46,8 +46,8 @@ main {
 	color: #c7ccdb;
 }
 
-a:link,
-a:visited {
+.btn:link,
+.btn:visited {
 	text-decoration: none;
 	color: #e1e5ee;
 	border: 1px solid #e1e5ee;
@@ -55,7 +55,7 @@ a:visited {
 	border-radius: 4px;
 }
 
-a:hover {
+.btn:hover {
 	background-color: #e1e5ee;
 	color: #6d7275;
 	transition-duration: 0.5s;
@@ -76,6 +76,7 @@ a:hover {
 
 .portfolio-item {
 	padding: 0 20px;
+	min-height: 200px;
 }
 
 h5 {
@@ -126,9 +127,6 @@ h5 {
 	transition-duration: 0.5s;
 }
 
-
-
-
 .about-me {
 	width: 60%;
 	justify-content: space-between;
@@ -147,13 +145,9 @@ h5 {
 }
 
 .github {
-	background-image: url("images/github.png");
-	background-position: center;
 	width: 10%;
 }
 .linkedin {
-	background-image: url("images/linkedinlogo.png");
-	background-position: center;
 	width: 10%;
 }
 
