@@ -171,7 +171,6 @@ h5 {
 		background-image: url("images/floor2.jpg");
 		background-position: center;
 		background-size: cover;
-
 		filter: grayscale(100%);
 		width: 80%;
 		padding: 150px;
@@ -185,13 +184,31 @@ h5 {
 	#items {
 		grid-template-columns: 1fr;
 	}
-	
 	.contacts {
 		width: 80%;
 	}
+	main {
+		padding: 100px;
+	}
+	.quote {
+		font-size: 80%;
+	}
 }
 @media screen and (max-width: 520px) {
+	main {
+		padding: 50px;
+	}
 
-	
-
+}
+@media screen and (max-width: 400px) {
+	header {
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-items: center;
+	}
+	.contacts {
+		grid-template-columns: 1fr;
+		justify-items: center;
+		max-height: 110px;
+	}
 }
