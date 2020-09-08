@@ -96,6 +96,24 @@ h5 {
 }
 
 .pi-image2 {
+	background-image: url("images/wireframesml.png");
+	background-position: contain;
+	object-fit: contain;
+	color: #e1e5ee;
+}
+.pi-image2:hover {
+	background-image: url("images/wireframecopy.png");
+	color: transparent;
+	transition-duration: 0.5s;
+}
+
+.pi-image3:hover {
+	color: transparent;
+	transition-duration: 1s;
+}
+
+
+.pi-image4 {
 	background-image: url("images/flowerbw.jpg");
 	background-position: center;
 	background-size: cover;
@@ -103,22 +121,12 @@ h5 {
 	text-align: right;
 }
 
-.pi-image2:hover {
+.pi-image4:hover {
 	background-image: url("images/flowercol.jpg");
 	transition-duration: 0.5s;
 }
 
-.pi-image3 {
-	background-image: url("images/wireframesml.png");
-	background-position: contain;
-	object-fit: contain;
-	color: #e1e5ee;
-}
-.pi-image3:hover {
-	background-image: url("images/wireframecopy.png");
-	color: transparent;
-	transition-duration: 0.5s;
-}
+
 
 
 .about-me {
