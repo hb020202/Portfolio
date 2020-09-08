@@ -177,4 +177,8 @@ h5 {
 	#items {
 		grid-template-columns: 1fr;
 	}
+	
+	.contacts {
+		width: 80%;
+	}
 }
