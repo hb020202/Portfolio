@@ -1,5 +1,3 @@
-//css here - adding a note to indicate this version is story1
-
 * {
 	box-sizing: border-box;
 }
@@ -18,8 +16,6 @@ header {
 	background-color: #c7ccdb;
 	color: #2a324b;
 	margin: auto;
-
-
 }
 
 .banner {
@@ -41,32 +37,32 @@ main {
 	background-size: cover;
 	filter: grayscale(100%);
 	padding: 210px;
-	width: 30%;
+	width: 60%;
 	margin: auto;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #6d7275;
+	border: 1px solid #6d7275;
 	display: block;
 	
 }
 
-.quote,
-button,
-.about-btn {
+.quote {
 	color: #c7ccdb;
 }
 
-button {
-	background-color: white;
-	border: 2px solid #2a324b;
+a:link,
+a:visited {
+	text-decoration: none;
+	color: #e1e5ee;
+	border: 1px solid #e1e5ee;
+	padding: 4px;
+	border-radius: 4px;
 }
 
-button:hover {
-	background-color: #2a324b;
-	
-	color: white;
-	
+a:hover {
+	background-color: #e1e5ee;
+	color: #000000;
+	transition-duration: 0.5s;
 }
+
 
 .items {
 	display: grid;
@@ -89,29 +85,27 @@ h5 {
 }
 
 .pi-image1 {
-	background-image: url("images/tech.jpg");
+	background-image: url("images/techbw.jpg");
 	background-position: center;
 	background-size: cover;
-	filter: grayscale(1);
-	border-style: solid;
-	border-width: 1px;
-	border-color: #6d7275;
+	border: 1px solid #6d7275;
 }
 
+.pi-image1:hover {
+	background-image: url("images/tech.jpg");
+	transition-duration: 0.5s;
+}
 
 .pi-image2 {
-	background-image: url("images/flower.jpg");
+	background-image: url("images/flowerbw.jpg");
 	background-position: center;
 	background-size: cover;
-	filter: grayscale(100%);
-	border-style: solid;
-	border-width: 1px;
-	border-color: #6d7275;
+	border: 1px solid #6d7275;
 	text-align: right;
 }
 
-.hover:hover {
-	filter: grayscale(0);
+.pi-image2:hover {
+	background-image: url("images/flowercol.jpg");
 	transition-duration: 0.5s;
 }
 
@@ -127,9 +121,7 @@ h5 {
 	justify-content: space-between;
 	margin: 20px auto;
 	padding: 30px;
-	border-style: solid;
-	border-width: 5px;
-	border-color: #2a324b;
+	border: 5px solid #2a324b;
 	color: #2a324b;
 }
 
