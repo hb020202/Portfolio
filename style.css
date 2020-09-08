@@ -113,11 +113,17 @@ h5 {
 }
 
 .pi-image3 {
-	background-image: url("images/wireframe.png");
+	background-image: url("images/wireframesml.png");
 	background-position: contain;
 	object-fit: contain;
-	
+	color: #e1e5ee;
 }
+.pi-image3:hover {
+	background-image: url("images/wireframecopy.png");
+	color: transparent;
+	transition-duration: 0.5s;
+}
+
 
 .about-me {
 	width: 60%;
