@@ -28,7 +28,10 @@ header {
 	border-width: 1px;
 	border-color: #001a1d;
 	text-align: center;
-	
+}
+.banner:hover {
+	letter-spacing: 3px;
+	transition-duration: 0.2s;
 }
 
 main {
@@ -147,7 +150,12 @@ h5 {
 @media screen and (max-width: 1200px) {
 	#items {
 		grid-template-columns: 1fr 1fr;
-
+	}
+	main {
+		background-image: url("images/floor2.jpg");
+		background-position: center;
+		background-size: cover;
+		filter: grayscale(100%);
 	}
 }
 
