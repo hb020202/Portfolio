@@ -15,6 +15,11 @@ header {
 	padding: 15px 0;
 }
 
+header h3 {
+	letter-spacing: 3px;
+	font-variant: small-caps;
+}
+
 header, 
 main,
 .items,
@@ -33,7 +38,9 @@ header,
 	margin: 20px auto;
 	border: 1px solid #2a324b;
 	text-align: center;
+	font-variant: small-caps;
 }
+
 .banner:hover {
 	letter-spacing: 3px;
 	transition-duration: 0.2s;
@@ -51,6 +58,7 @@ main {
 	width: 60%;
 	color: #c7ccdb;
 }
+
 .btn:link,
 .btn:visited {
 	text-decoration: none;
@@ -58,7 +66,10 @@ main {
 	border: 1px solid #e1e5ee;
 	padding: 4px;
 	border-radius: 4px;
+	width: 130px;
+	text-align: center;
 }
+
 .btn:hover {
 	background-color: #e1e5ee;
 	color: #6d7275;
@@ -73,61 +84,70 @@ main {
 	color: #2a324b;
 	gap: 10px;
 }
+
 .portfolio-item {
 	padding: 0 20px;
 	min-height: 200px;
 }
+
 h5 {
 	padding: 0 0 50px 0;
 }
-.pi-image1 {
+
+.pi-1 {
 	background-image: url("images/techbw.jpg");
 }
-.pi-image1:hover {
+
+.pi-1:hover {
 	background-image: url("images/tech.jpg"); /* Different photo added so that text not affected by grayscale filter */
 }
-.pi-image2 {
+
+.pi-2 {
 	background-image: url("images/wireframesml.png");
 	background-repeat: no-repeat;
 	color: #e1e5ee;
 }
-.pi-image2:hover {
+
+.pi-2:hover {
 	background-image: url("images/wireframecopy.png");
+}
+
+.pi-2:hover,
+.pi-3:hover {
 	color: transparent;
 }
-.pi-image3:hover {
-	color: transparent;
-	transition-duration: .2s;
-}
+
 .no:hover::after {
-	transition-timing-function: ease-in;
-	transition-delay: 1s;
-	text-align: right;
-	color: black;
+	color: #2a324b;
 	content: "no";
 }
-.pi-image4 {
+
+.pi-4 {
 	background-image: url("images/flowerbw.jpg");
 	text-align: right;
 }
-.pi-image4:hover {
+
+.pi-4:hover {
 	background-image: url("images/flowercol.jpg"); /* Different photo added so that text not affected by grayscale filter */
 }
+
 main,
-.pi-image1,
-.pi-image2,
-.pi-image4 {
+.pi-1,
+.pi-2,
+.pi-4 {
 	background-size: cover;
 }
+
 main,
-.pi-image1,
-.pi-image4 {
+.pi-1,
+.pi-4 {
 	background-position: center;
 	border: 1px solid #6d7275;
 }
-.pi-image1:hover,
-.pi-image2:hover,
-.pi-image4:hover {
+
+.pi-1:hover,
+.pi-2:hover,
+.pi-4:hover {
 	transition-duration: 0.5s;
 }
 
@@ -145,11 +165,17 @@ main,
 	grid-template-columns: 1fr 1fr 1fr;
 	width: 50%;
 }
+
 .contacts img {
 	max-height: 30px;
 }
+
 .social {
 	text-align: center;
+}
+
+.bnr-end {
+	font-size: 50%;
 }
 
 @media screen and (max-width: 1200px) { /* Smaller screen */
@@ -168,6 +194,7 @@ main,
 		width: 80%;
 	}
 }
+
 @media screen and (max-width: 700px) {
 	#items {
 		grid-template-columns: 1fr;
@@ -182,11 +209,13 @@ main,
 		font-size: 80%;
 	}
 }
+
 @media screen and (max-width: 520px) {
 	main {
 		padding: 50px;
 	}
 }
+
 @media screen and (max-width: 400px) { /* Smallest screen setting for phones */
 	header {
 		display: grid;
