@@ -178,8 +178,9 @@ main,
 	font-size: 50%;
 }
 
-@media screen and (max-width: 1200px) { /* Smaller screen */
-	#items {
+/* Smaller screen */
+@media screen and (max-width: 1100px) { 
+	#items-link {
 		grid-template-columns: 1fr 1fr;
 	}
 	main {
@@ -190,23 +191,18 @@ main,
 		width: 80%;
 		padding: 150px;
 	}
-	.about-me {
+	.about-me,
+	.contacts {
 		width: 80%;
+	}
+	.quote {
+		font-size: 80%;
 	}
 }
 
 @media screen and (max-width: 700px) {
-	#items {
+	#items-link {
 		grid-template-columns: 1fr;
-	}
-	.contacts {
-		width: 80%;
-	}
-	main {
-		padding: 100px;
-	}
-	.quote {
-		font-size: 80%;
 	}
 }
 
@@ -214,9 +210,6 @@ main,
 	main {
 		padding: 50px;
 	}
-}
-
-@media screen and (max-width: 400px) { /* Smallest screen setting for phones */
 	header {
 		display: grid;
 		grid-template-columns: 1fr;
